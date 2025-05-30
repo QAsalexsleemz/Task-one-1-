@@ -1,12 +1,17 @@
 let side1 = "4cm"
-let side2 = "5cm"
-let side3 = "6cm"
+let side2 = "4cm"
+let side3 = "4cm"
  
     
-if(side1 === "4cm" && side2 === "4cm" && side3 === "4cm"){
+if(side1 === side2 && side3){
     console.log("It is an equilateral triangle")
 }
-else{
-    console.log("It is an scalene triangle")
+else if(side1 === side2 || side1 === side3 || side2 === side3){
+    console.log("It is an isosceles triangle")
 }
+else{
+    console.log("It is a scalene triangle")
+}
+
+
 
